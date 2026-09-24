@@ -1,12 +1,12 @@
 <head>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
 <link href='style.css' rel='stylesheet' type='text/css'>
-<title>8values Results</title>
+<title>APValues Results</title>
 <link rel="icon" type="x-icon" href="icon.png">
 <link rel="shortcut icon" type="x-icon" href="icon.png">
 <meta charset="utf-8">
 <script>
-  version = "Test Edition #1" //Remember to update this before making changes to the test itself!
+  version = "Archipelago Edition #2" //Remember to update this before making changes to the test itself!
 </script>
 </head>
 <script type="application/javascript"
@@ -14,38 +14,45 @@
 </script>
 
 <body>
-<h1>8values</h1>
+<h1>APValues</h1>
 <hr>
 
 <h1>Results</h1>
 
-<h2>Economic Axis: <span class="weight-300" id="economic-label"></span></h2>
+<h2>Hint Axis: <span class="weight-300" id="hint-label"></span></h2>
 <div class="axis">
-    <img id="img-equality" src="value_images/equality.svg" height="128pt"/>
-    <div class="bar equality" id="bar-equality"><div class="text-wrapper" id="equality"></div></div>
-    <div class="bar wealth" id="bar-wealth"><div class="text-wrapper" id="wealth"></div></div>
-    <img id="img-wealth" src="value_images/markets.svg" height="128pt"/>
+    <img id="img-freehints" src="value_images/equality.svg" height="128pt"/>
+    <div class="bar freehints" id="bar-freehints"><div class="text-wrapper" id="freehints"></div></div>
+    <div class="bar hinteconomy" id="bar-hinteconomy"><div class="text-wrapper" id="hinteconomy"></div></div>
+    <img id="img-hinteconomy" src="value_images/markets.svg" height="128pt"/>
 </div>
-<h2>Diplomatic Axis: <span class="weight-300" id="diplomatic-label"></span></h2>
+<h2>DeathLink Axis: <span class="weight-300" id="deth-label"></span></h2>
 <div class="axis">
-    <img id="img-might" src="value_images/nation.svg" height="128pt"/>
-    <div class="bar might" id="bar-might"><div class="text-wrapper" id="might"></div></div>
-    <div class="bar peace" id="bar-peace"><div class="text-wrapper" id="peace"></div></div>
-    <img id="img-peace" src="value_images/globe.svg" height="128pt"/>
+    <img id="img-deathlinkbanned" src="value_images/nation.svg" height="128pt"/>
+    <div class="bar deathlinkbanned" id="bar-deathlinkbanned"><div class="text-wrapper" id="deathlinkbanned"></div></div>
+    <div class="bar deathlinkmandatory" id="bar-deathlinkmandatory"><div class="text-wrapper" id="deathlinkmandatory"></div></div>
+    <img id="img-deathlinkmandatory" src="value_images/globe.svg" height="128pt"/>
 </div>
-<h2>Civil Axis: <span class="weight-300" id="state-label"></span></h2>
+<h2>Deadline Axis: <span class="weight-300" id="time-label"></span></h2>
 <div class="axis">
-    <img id="img-liberty" src="value_images/liberty.svg" height="128pt"/>
-    <div class="bar liberty" id="bar-liberty"><div class="text-wrapper" id="liberty"></div></div>
-    <div class="bar authority" id="bar-authority"><div class="text-wrapper" id="authority"></div></div>
-    <img id="img-authority" src="value_images/authority.svg" height="128pt"/>
+    <img id="img-freeplay" src="value_images/liberty.svg" height="128pt"/>
+    <div class="bar freeplay" id="bar-freeplay"><div class="text-wrapper" id="freeplay"></div></div>
+    <div class="bar deadline" id="bar-deadline"><div class="text-wrapper" id="deadline"></div></div>
+    <img id="img-deadline" src="value_images/authority.svg" height="128pt"/>
 </div>
-<h2>Societal Axis: <span class="weight-300" id="society-label"></span></h2>
+<h2>Check Count Axis: <span class="weight-300" id="chek-label"></span></h2>
 <div class="axis">
-    <img id="img-tradition" src="value_images/tradition.svg" height="128pt"/>
-    <div class="bar tradition" id="bar-tradition"><div class="text-wrapper" id="tradition"></div></div>
-    <div class="bar progress" id="bar-progress"><div class="text-wrapper" id="progress"></div></div>
-    <img id="img-progress" src="value_images/progress.svg" height="128pt"/>
+    <img id="img-minimal" src="value_images/tradition.svg" height="128pt"/>
+    <div class="bar minimal" id="bar-minimal"><div class="text-wrapper" id="minimal"></div></div>
+    <div class="bar maximal" id="bar-maximal"><div class="text-wrapper" id="maximal"></div></div>
+    <img id="img-maximal" src="value_images/progress.svg" height="128pt"/>
+</div>
+<h2>Bonus Link Axis: <span class="weight-300" id="link-label"></span></h2>
+<div class="axis">
+    <img id="img-noextras" src="value_images/noextras.svg" height="128pt"/>
+    <div class="bar noextras" id="bar-noextras"><div class="text-wrapper" id="noextras"></div></div>
+    <div class="bar allextras" id="bar-allextras"><div class="text-wrapper" id="allextras"></div></div>
+    <img id="img-allextras" src="value_images/allextras.svg" height="128pt"/>
 </div>
 <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
 <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
@@ -53,22 +60,6 @@
 <hr/>
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';">Back</button> <br>
-<!-- Website visit statistics - no personal information is collected! -->
-<script type="text/javascript">
-var sc_project=11325211;
-var sc_invisible=1;
-var sc_security="fd9f0659";
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="web stats"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
-stats"></a></div></noscript>
 <script>
     function getQueryVariable(variable)
     {
@@ -91,10 +82,11 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Communist","Socialist","Social","Centrist","Market","Capitalist","Laissez-Faire"]
-    diplArray = ["Cosmopolitan","Internationalist","Peaceful","Balanced","Patriotic","Nationalist","Chauvinist"]
-    govtArray = ["Anarchist","Libertarian","Liberal","Moderate","Statist","Authoritarian","Totalitarian"]
-    sctyArray = ["Revolutionary","Very Progressive","Progressive","Neutral","Traditional","Very Traditional","Reactionary"]
+    hintArray = ["Hint-Happy","Very Generous","Generous","Balanced","Frugal","Stingy","No-Hints"]
+    dethArray = ["DeathLink Zealot","DeathLink Advocate","DeathLink Friendly","Neutral","DeathLink Wary","DeathLink Skeptic","DeathLink Abolitionist"]
+    timeArray = ["No Deadlines Ever","Very Relaxed","Casual Pace","Moderate","Time-Conscious","Deadline-Driven","Speedrun Strict"]
+    chekArray = ["Checksanity Maniac","Very Maximalist","Maximalist","Balanced","Minimalist","Very Minimalist","Vanilla Purist"]
+    linkArray = ["Link Everything","Very Pro-Extras","Pro-Extras","Balanced","Cautious","Anti-Extras","No Extras Ever"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
@@ -108,37 +100,43 @@ stats"></a></div></noscript>
         	{return ""}
     }
 
-    equality  = getQueryVariable("e")
-    peace     = getQueryVariable("d")
-    liberty   = getQueryVariable("g")
-    progress  = getQueryVariable("s")
-    wealth    = (100 - equality).toFixed(1)
-    might     = (100 - peace   ).toFixed(1)
-    authority = (100 - liberty ).toFixed(1)
-    tradition = (100 - progress).toFixed(1)
+    freehints    = getQueryVariable("hint")
+    deathlinkmandatory = getQueryVariable("deth")
+    freeplay     = getQueryVariable("time")
+    maximal      = getQueryVariable("chek")
+    allextras    = getQueryVariable("link")
+    hinteconomy      = (100 - freehints).toFixed(1)
+    deathlinkbanned  = (100 - deathlinkmandatory).toFixed(1)
+    deadline         = (100 - freeplay).toFixed(1)
+    minimal          = (100 - maximal).toFixed(1)
+    noextras         = (100 - allextras).toFixed(1)
 
-    setBarValue("equality", equality)
-    setBarValue("wealth", wealth)
-    setBarValue("peace", peace)
-    setBarValue("might", might)
-    setBarValue("liberty", liberty)
-    setBarValue("authority", authority)
-    setBarValue("progress", progress)
-    setBarValue("tradition", tradition)
+    setBarValue("freehints", freehints)
+    setBarValue("hinteconomy", hinteconomy)
+    setBarValue("deathlinkmandatory", deathlinkmandatory)
+    setBarValue("deathlinkbanned", deathlinkbanned)
+    setBarValue("freeplay", freeplay)
+    setBarValue("deadline", deadline)
+    setBarValue("maximal", maximal)
+    setBarValue("minimal", minimal)
+    setBarValue("allextras", allextras)
+    setBarValue("noextras", noextras)
 
-    document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
-    document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
-    document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
+    document.getElementById("hint-label").innerHTML = setLabel(freehints, hintArray)
+    document.getElementById("deth-label").innerHTML = setLabel(deathlinkmandatory, dethArray)
+    document.getElementById("time-label").innerHTML = setLabel(freeplay, timeArray)
+    document.getElementById("chek-label").innerHTML = setLabel(maximal, chekArray)
+    document.getElementById("link-label").innerHTML = setLabel(allextras, linkArray)
 
     ideology = ""
     ideodist = Infinity
     for (var i = 0; i < ideologies.length; i++) {
         dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.hint - freehints), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.time - freeplay), 2)
+        dist += Math.pow(Math.abs(ideologies[i].stats.deth - deathlinkmandatory), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.chek - maximal), 1.73856063)
+        dist += Math.pow(Math.abs(ideologies[i].stats.link - allextras), 1.73856063)
         if (dist < ideodist) {
             ideology = ideologies[i].name
             ideodist = dist
@@ -158,74 +156,86 @@ stats"></a></div></noscript>
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
         c.width = 800;
-        c.height = 650;
+        c.height = 770;
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,650);
+        ctx.fillRect(0,0,800,770);
 
-        img = document.getElementById("img-equality")
+        img = document.getElementById("img-freehints")
         ctx.drawImage(img, 20, 170, 100, 100);
-        img = document.getElementById("img-wealth")
+        img = document.getElementById("img-hinteconomy")
         ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById("img-might")
+        img = document.getElementById("img-deathlinkbanned")
         ctx.drawImage(img, 20, 290, 100, 100)
-        img = document.getElementById("img-peace")
+        img = document.getElementById("img-deathlinkmandatory")
         ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById("img-liberty")
+        img = document.getElementById("img-freeplay")
         ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById("img-authority")
+        img = document.getElementById("img-deadline")
         ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById("img-tradition")
+        img = document.getElementById("img-minimal")
         ctx.drawImage(img, 20, 530, 100, 100)
-        img = document.getElementById("img-progress")
+        img = document.getElementById("img-maximal")
         ctx.drawImage(img, 680, 530, 100, 100)
+        img = document.getElementById("img-noextras")
+        ctx.drawImage(img, 20, 650, 100, 100)
+        img = document.getElementById("img-allextras")
+        ctx.drawImage(img, 680, 650, 100, 100)
 
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 180, 560, 80)
         ctx.fillRect(120, 300, 560, 80)
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
+        ctx.fillRect(120, 660, 560, 80)
         ctx.fillStyle="#f44336"
-        ctx.fillRect(120, 184, 5.6*equality-2, 72)
+        ctx.fillRect(120, 184, 5.6*freehints-2, 72)
         ctx.fillStyle="#00897b"
-        ctx.fillRect(682-5.6*wealth, 184, 5.6*wealth-2, 72)
+        ctx.fillRect(682-5.6*hinteconomy, 184, 5.6*hinteconomy-2, 72)
         ctx.fillStyle="#ff9800"
-        ctx.fillRect(120, 304, 5.6*might-2, 72)
+        ctx.fillRect(120, 304, 5.6*deathlinkbanned-2, 72)
         ctx.fillStyle="#03a9f4"
-        ctx.fillRect(682-5.6*peace, 304, 5.6*peace-2, 72)
+        ctx.fillRect(682-5.6*deathlinkmandatory, 304, 5.6*deathlinkmandatory-2, 72)
         ctx.fillStyle="#ffeb3b"
-        ctx.fillRect(120, 424, 5.6*liberty-2, 72)
+        ctx.fillRect(120, 424, 5.6*freeplay-2, 72)
         ctx.fillStyle="#3f51b5"
-        ctx.fillRect(682-5.6*authority, 424, 5.6*authority-2, 72)
+        ctx.fillRect(682-5.6*deadline, 424, 5.6*deadline-2, 72)
         ctx.fillStyle="#8bc34a"
-        ctx.fillRect(120, 544, 5.6*tradition-2, 72)
+        ctx.fillRect(120, 544, 5.6*minimal-2, 72)
         ctx.fillStyle="#9c27b0"
-        ctx.fillRect(682-5.6*progress, 544, 5.6*progress-2, 72)
+        ctx.fillRect(682-5.6*maximal, 544, 5.6*maximal-2, 72)
+        ctx.fillStyle="#795548"
+        ctx.fillRect(120, 664, 5.6*noextras-2, 72)
+        ctx.fillStyle="#e91e63"
+        ctx.fillRect(682-5.6*allextras, 664, 5.6*allextras-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
-        ctx.fillText("8values", 20, 90)
+        ctx.fillText("APValues", 20, 90)
         ctx.font="50px Montserrat"
         ctx.fillText(ideology, 20, 140)
 
         ctx.textAlign="left"
-        if (equality  > 30) {ctx.fillText(equality + "%", 130, 237.5)}
-        if (might     > 30) {ctx.fillText(might + "%", 130, 357.5)}
-        if (liberty   > 30) {ctx.fillText(liberty + "%", 130, 477.5)}
-        if (tradition > 30) {ctx.fillText(tradition + "%", 130, 597.5)}
+        if (freehints       > 30) {ctx.fillText(freehints + "%", 130, 237.5)}
+        if (deathlinkbanned > 30) {ctx.fillText(deathlinkbanned + "%", 130, 357.5)}
+        if (freeplay        > 30) {ctx.fillText(freeplay + "%", 130, 477.5)}
+        if (minimal         > 30) {ctx.fillText(minimal + "%", 130, 597.5)}
+        if (noextras        > 30) {ctx.fillText(noextras + "%", 130, 717.5)}
         ctx.textAlign="right"
-        if (wealth    > 30) {ctx.fillText(wealth + "%", 670, 237.5)}
-        if (peace     > 30) {ctx.fillText(peace + "%", 670, 357.5)}
-        if (authority > 30) {ctx.fillText(authority + "%", 670, 477.5)}
-        if (progress  > 30) {ctx.fillText(progress + "%", 670, 597.5)}
+        if (hinteconomy        > 30) {ctx.fillText(hinteconomy + "%", 670, 237.5)}
+        if (deathlinkmandatory > 30) {ctx.fillText(deathlinkmandatory + "%", 670, 357.5)}
+        if (deadline           > 30) {ctx.fillText(deadline + "%", 670, 477.5)}
+        if (maximal            > 30) {ctx.fillText(maximal + "%", 670, 597.5)}
+        if (allextras          > 30) {ctx.fillText(allextras + "%", 670, 717.5)}
 
         ctx.font="300 30px Montserrat"
-        ctx.fillText("8values.github.io", 780, 60)
+        ctx.fillText("apvalues.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
-        ctx.fillText("Economic Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
-        ctx.fillText("Diplomatic Axis: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
-        ctx.fillText("Civil Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
-        ctx.fillText("Societal Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
+        ctx.fillText("Hint Axis: " + document.getElementById("hint-label").innerHTML, 400, 175)
+        ctx.fillText("DeathLink Axis: " + document.getElementById("deth-label").innerHTML, 400, 295)
+        ctx.fillText("Deadline Axis: " + document.getElementById("time-label").innerHTML, 400, 415)
+        ctx.fillText("Check Count Axis: " + document.getElementById("chek-label").innerHTML, 400, 535)
+        ctx.fillText("Bonus Link Axis: " + document.getElementById("link-label").innerHTML, 400, 655)
 
         document.getElementById("banner").src = c.toDataURL();
     }
