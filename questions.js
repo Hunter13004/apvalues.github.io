@@ -399,7 +399,7 @@ questions = [
         }
     },
     {
-        "question": "Dropping your slot mid-race should be result in a ban from future multiworlds",
+        "question": "Dropping your slot mid-race should result in a ban from future multiworlds",
         "effect": {
             "hint": 0,
             "deth": 0,
