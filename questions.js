@@ -4,7 +4,7 @@ questions = [
         "effect": {
             "hint": 10,
             "deth": 0,
-            "time": -5,
+            "time": 5,
             "chek": 0
         }
     },
@@ -20,7 +20,7 @@ questions = [
     {
         "question": "The freer the hints, the freer the people.",
         "effect": {
-            "hint": -10,
+            "hint": 10,
             "deth": 0,
             "time": 0,
             "chek": 0
@@ -29,7 +29,7 @@ questions = [
     {
         "question": "Charging steep hint costs and enforcing firm deadlines both encourage more self-sufficient play.",
         "effect": {
-            "hint": 5,
+            "hint": -10,
             "deth": 0,
             "time": -10,
             "chek": 0
@@ -38,9 +38,9 @@ questions = [
     {
         "question": "From each according to their hint points, to each according to their confusion.",
         "effect": {
-            "hint": 10,
+            "hint": 5,
             "deth": 0,
-            "time": 0,
+            "time": 5,
             "chek": 0
         }
     },
@@ -58,14 +58,14 @@ questions = [
         "effect": {
             "hint": 10,
             "deth": 0,
-            "time": 0,
+            "time": -5,
             "chek": 0
         }
     },
     {
         "question": "Leftover hint points saved up from a previous multiworlds are legitimately yours to keep.",
         "effect": {
-            "hint": -10,
+            "hint": 10,
             "deth": 0,
             "time": 0,
             "chek": -5
@@ -130,8 +130,9 @@ questions = [
         "effect": {
             "hint": 0,
             "deth": -10,
-            "time": -5,
-            "chek": 0
+            "time": 0,
+            "chek": 0,
+            "link": -5
         }
     },
     {
@@ -214,7 +215,7 @@ questions = [
         "effect": {
             "hint": 0,
             "deth": 0,
-            "time": -10,
+            "time": 0,
             "chek": -10
         }
     },
@@ -223,7 +224,7 @@ questions = [
         "effect": {
             "hint": 0,
             "deth": 0,
-            "time": -10,
+            "time": -5,
             "chek": -10
         }
     },
@@ -246,20 +247,20 @@ questions = [
         }
     },
     {
-        "question": "Players falling behind on checks shouldn't have their checks released.",
-        "effect": {
-            "hint": 0,
-            "deth": 0,
-            "time": 10,
-            "chek": 5
-        }
-    },
-    {
-        "question": "Tracking everyone's check completion in real time is necessary for a fair race.",
+        "question": "Players falling behind on checks should have their checks released.",
         "effect": {
             "hint": 0,
             "deth": 0,
             "time": -10,
+            "chek": -5
+        }
+    },
+    {
+        "question": "Tracking everyone's check completion in real time is unjust and a waste of resources.",
+        "effect": {
+            "hint": 0,
+            "deth": 0,
+            "time": 10,
             "chek": 0
         }
     },
@@ -309,30 +310,21 @@ questions = [
         }
     },
     {
-        "question": "A small, vanilla check count has no special value on its own.",
+        "question": "Players with more checks should have looser deadlines.",
         "effect": {
             "hint": 0,
             "deth": 0,
-            "time": 0,
+            "time": 10,
             "chek": 10
         }
     },
     {
-        "question": "Old-school minimalism should shape how deadlines are set.",
-        "effect": {
-            "hint": 0,
-            "deth": 0,
-            "time": -10,
-            "chek": -10
-        }
-    },
-    {
-        "question": "Vanilla-style games should earn hint points the same way checksanity games do.",
+        "question": "Hint costs should be lower for those with many checks.",
         "effect": {
             "hint": 5,
             "deth": 0,
             "time": 0,
-            "chek": 5
+            "chek": 10
         }
     },
     {
@@ -444,15 +436,6 @@ questions = [
         }
     },
     {
-        "question": "Heavily modified, expanded item pools are a force for good, even in classic games.",
-        "effect": {
-            "hint": 0,
-            "deth": 0,
-            "time": 0,
-            "chek": 10
-        }
-    },
-    {
         "question": "We should let any game join the multiworld, DeathLink or not.",
         "effect": {
             "hint": 0,
@@ -488,26 +471,6 @@ questions = [
             "time": 0,
             "chek": 0,
             "link": -10
-        }
-    },
-    {
-        "question": "If a feature isn't part of the base randomizer, it shouldn't be added at all.",
-        "effect": {
-            "hint": 0,
-            "deth": -5,
-            "time": 0,
-            "chek": -5,
-            "link": -10
-        }
-    },
-    {
-        "question": "Games that support fun extras like RingLink should always have them turned on.",
-        "effect": {
-            "hint": 0,
-            "deth": 0,
-            "time": 0,
-            "chek": 0,
-            "link": 10
         }
     },
     {
@@ -551,16 +514,6 @@ questions = [
         }
     },
     {
-        "question": "Untested, community-made link features shouldn't be trusted in a real race.",
-        "effect": {
-            "hint": 0,
-            "deth": -5,
-            "time": 0,
-            "chek": 0,
-            "link": -5
-        }
-    },
-    {
         "question": "The best multiworlds are the ones packed with as many bonus link gimmicks as possible.",
         "effect": {
             "hint": 0,
@@ -568,16 +521,6 @@ questions = [
             "time": 0,
             "chek": 0,
             "link": 10
-        }
-    },
-    {
-        "question": "A clean, vanilla multiworld beats one loaded with extra link mods.",
-        "effect": {
-            "hint": 0,
-            "deth": 0,
-            "time": 0,
-            "chek": 0,
-            "link": -10
         }
     },
     {
@@ -601,16 +544,6 @@ questions = [
         }
     },
     {
-        "question": "Every new Link-style mechanic that comes out should be added to our regular rotation.",
-        "effect": {
-            "hint": 0,
-            "deth": 0,
-            "time": 0,
-            "chek": 0,
-            "link": 10
-        }
-    },
-    {
         "question": "We already have DeathLink; that's enough shared mechanics for one multiworld.",
         "effect": {
             "hint": 0,
@@ -618,16 +551,6 @@ questions = [
             "time": 0,
             "chek": 0,
             "link": -10
-        }
-    },
-    {
-        "question": "It's fun to stumble into an obscure link feature mid-race, even if no one planned for it.",
-        "effect": {
-            "hint": 0,
-            "deth": 0,
-            "time": 0,
-            "chek": 0,
-            "link": 5
         }
     }
 ];
